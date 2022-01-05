@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-# RUN npm install -g strapi@alpha
-
 RUN npm run build
 
 EXPOSE 1337
