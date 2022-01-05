@@ -57,4 +57,6 @@ jobs:
 
 **NOTA:** Buscar HEROKU_API_KEY en heroku "Account Settings"(arriba a la derecha)> Copiar "API Key", finalmente agregar en github sevcrets del repositorio creado
 
-6. Cada vez que se haga un push a la rama master, se compilara el proyecto y se generara una imagen que se subira al container registry de heroku
+6. Cada vez que se haga un push a la rama master, se compilara el proyecto y se generara una imagen que se subira al container registry de heroku.
+   * **ABRIR APP** ==> ir a la consola de heroku del proyecto creado y seleccionar "Open App"
+
