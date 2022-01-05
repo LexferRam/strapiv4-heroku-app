@@ -16,13 +16,6 @@ jobs:
           heroku_app_name: "strapiherokuapp" #Must be unique in Heroku
           heroku_email: "lexferramirez@gmail.com"
           usedocker: true
-          docker_build_args: |
-            ${{secrets.DATABASE_HOST}}
-            ${{secrets.DATABASE_PORT}}
-            ${{secrets.DATABASE_NAME}}
-            ${{secrets.DATABASE_USERNAME}}
-            ${{secrets.DATABASE_PASSWORD}}
-            ${{secrets.DATABASE_SCHEMA}}
         env:
           DATABASE_HOST: ${{secrets.DATABASE_HOST}}
           DATABASE_PORT: ${{secrets.DATABASE_PORT}}
