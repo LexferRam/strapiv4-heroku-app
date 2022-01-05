@@ -2,9 +2,13 @@ FROM node:14.18.1-alpine
 
 WORKDIR /usr/src/api
 
+COPY package*.json ./
+
+RUN npm install
+
 COPY . .
 
-RUN npm install -g strapi@alpha
+# RUN npm install -g strapi@alpha
 
 RUN npm run build
 
