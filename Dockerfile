@@ -4,6 +4,8 @@ WORKDIR /usr/src/api
 
 COPY package*.json ./
 
+RUN git pull origin main
+
 RUN npm install
 
 COPY . .
